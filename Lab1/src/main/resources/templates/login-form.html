@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h3 th:text="${messages}">Vui lòng đăng nhập</h3>
+<form th:action="@{/login}" method="post">
+    Username: <input type="text" name="username" placeholder="username"/> <br>
+    Password: <input type="password" name="password" placeholder="password"/> <br>
+    <input type="checkbox" name="remember-me"/>Remember me?
+
+    <br>
+    <button type="submit">Login</button>
+</form>
+
+</body>
+</html>
