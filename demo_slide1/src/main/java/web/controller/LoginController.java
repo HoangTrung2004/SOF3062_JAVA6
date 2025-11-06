@@ -26,10 +26,10 @@ public class LoginController {
         model.addAttribute("messages", "Đăng nhập thất bại");
         return "login-form";
     }
+
     @GetMapping("/exit")
     public String exit(Model model) {
         model.addAttribute("messages", "Đăng xuất thành công");
         return "login-form";
     }
-
 }

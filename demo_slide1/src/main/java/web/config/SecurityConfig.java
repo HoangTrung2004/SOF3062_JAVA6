@@ -12,8 +12,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
-
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -22,7 +20,6 @@ public class SecurityConfig {
     public PasswordEncoder passwordEncoder() {
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
-
 
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder pe){
@@ -44,7 +41,7 @@ public class SecurityConfig {
 
         http.formLogin(form ->form
                 .loginPage("/login/form")
-                .loginProcessingUrl("/login/check")
+                .loginProcessingUrl("/login")
                 .defaultSuccessUrl("/", true)
                 .failureUrl("/login/failure")
                 .permitAll());
@@ -53,7 +50,6 @@ public class SecurityConfig {
                 .logoutSuccessUrl("/login/exit")
                 .permitAll());
         http.rememberMe(rm -> rm.tokenValiditySeconds(2*24*60*60));
-
         return http.build();
     }
 }

@@ -6,7 +6,7 @@
 </head>
 <body>
     <h3 th:text="${messages}"></h3>
-    <form th:action="@{/login/check}" method="post">
+    <form th:action="@{/login}" method="post">
         Username: <input type="text" name="username" placeholder="Username"><br>
         Password: <input type="password" name="password" placeholder="Password"><br>
         <input type="checkbox" name="remember-me"> Remember me? <br>
