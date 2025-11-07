@@ -6,7 +6,7 @@
 </head>
 <body>
     <h3 th:text="${messages}">Vui lòng đăng nhập</h3>
-<form th:action="@{/login}" method="post">
+<form th:action="@{/login/check}" method="post">
     Username: <input type="text" name="username" placeholder="username"/> <br>
     Password: <input type="password" name="password" placeholder="password"/> <br>
     <input type="checkbox" name="remember-me"/>Remember me?
