@@ -1,19 +1,22 @@
 package web.entity;
 
-
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 
-@Data @NoArgsConstructor @AllArgsConstructor
-@Entity @Table(name = "Users")                         // map bảng Users
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "Users")
 public class User {
     @Id
-    private String username;                           // PK
-
-    private String password;                           // {noop}123 (lab)
-    private boolean enabled;                           // BIT -> boolean
-
-    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER) // lấy luôn roles khi load user
-    private List<UserRole> userRoles;                  // các bản ghi nối
+    String username;
+    String password;
+    boolean enabled;
+    @OneToMany (mappedBy = "user", fetch = FetchType.EAGER)
+    List<UserRole> userRoles;
 }

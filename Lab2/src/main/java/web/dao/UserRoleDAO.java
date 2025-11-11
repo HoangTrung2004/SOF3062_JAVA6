@@ -5,6 +5,8 @@ import web.entity.UserRole;
 
 import java.util.List;
 
-public interface UserRoleDAO extends JpaRepository<UserRole,Integer> {
+public interface UserRoleDAO extends JpaRepository<UserRole,Long> {
+    List<UserRole> findByUser_Username(String username);
+
 
 }

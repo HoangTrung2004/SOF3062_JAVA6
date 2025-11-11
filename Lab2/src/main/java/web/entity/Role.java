@@ -14,13 +14,11 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Roles")
+@Table (name ="Roles")
 public class Role {
-
     @Id
     private String id;
     private String name;
-
-    @OneToMany(mappedBy = "role")
-    private List<UserRole> userRoles;
+    @OneToMany (mappedBy = "role")
+    private List<UserRole> userRolesS;
 }
