@@ -1,0 +1,13 @@
+<div th:fragment="user-info">
+<div th:switch="${@auth.authenticated}">
+    <ul th:case="true">
+        <li>Username: <b> [[${@auth.username}]]</b></li>
+        <li>Roles: <b th:text="${@auth.roles}"></b> </li>
+        <li th:if="${@auth.hasAnyRole('ADMIN')}"></li>
+        <a href="#">GOTO</a>
+    </ul>
+    <ul th:case="false">
+        <li>BẠN chưa đăng nhập</li>
+    </ul>
+</div>
+</div>

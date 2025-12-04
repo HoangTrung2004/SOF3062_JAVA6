@@ -1,0 +1,32 @@
+{
+    "SV001": {
+        "id": "SV001",
+        "name": "Sinh viên 001",
+        "mark": 8.5,
+        "gender": true
+    },
+    "SV002": {
+        "id": "SV002",
+        "name": "Sinh viên 002",
+        "mark": 5.5,
+        "gender": true
+    },
+    "SV003": {
+        "id": "SV003",
+        "name": "Sinh viên 003",
+        "mark": 7,
+        "gender": false
+    },
+    "SV004": {
+        "id": "SV004",
+        "name": "Sinh viên 004",
+        "mark": 8,
+        "gender": true
+    },
+    "SV005": {
+	    "id": "SV005",
+	    "name": "Sinh viên 005",
+	    "mark": 6.5,
+	    "gender": false
+	}
+}

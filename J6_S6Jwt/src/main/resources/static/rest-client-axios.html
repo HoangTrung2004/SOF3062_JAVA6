@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+	<input id="un">
+	<input id="pw">
+	<hr>
+	<button onclick="login()">Login</button>
+	<button onclick="gotoUrl0()">URL0</button>
+	<button onclick="gotoUrl1()">URL1</button>
+	<button onclick="gotoUrl3()">URL3</button>
+	<script>
+	let token;
+	function login() {
+		var url = "http://localhost:8080/poly/login";
+		var data = {
+			"username": document.getElementById("un").value,
+			"password": document.getElementById("pw").value
+		}
+		axios.post(url, data).then(resp => {
+			console.log("post() success", resp.data);
+			token = resp.data.token;
+		}).catch(error => {
+			console.log("post() error", error);
+		})
+	}
+	function gotoUrl0() {
+		var url = `http://localhost:8080/poly/url0`;
+		axios.get(url).then(resp => {
+			console.log("get() success", resp.data);
+		}).catch(error => {
+			console.log("get() error", error);
+		})
+	}
+	function gotoUrl1() {
+		var url = `http://localhost:8080/poly/url1`;
+		var config = {
+			headers: {
+				"Authorization": `Bearer ${token}`
+			}
+		};
+		axios.get(url, config).then(resp => {
+			console.log("get() success", resp.data);
+		}).catch(error => {
+			console.log("get() error", error);
+		})
+	}
+	function gotoUrl3() {
+		var url = `http://localhost:8080/poly/url3`;
+		var config = {
+			headers: {
+				"Authorization": `Bearer ${token}`
+			}
+		};
+		axios.get(url, config).then(resp => {
+			console.log("get() success", resp.data);
+		}).catch(error => {
+			console.log("get() error", error);
+		})
+	}
+	</script>
+</body>
+
+</html>

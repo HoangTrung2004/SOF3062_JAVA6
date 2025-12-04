@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e4ff170-1b24-450d-bfa3-7cb35129fc2b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lab3/src/main/java/web/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3/src/main/resources/templates/user-info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/src/main/resources/templates/student-crud.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/src/main/resources/templates/student-crud.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/src/main/java/web/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/src/main/java/web/util/HttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/src/main/java/web/util/RestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab6/src/main/java/web/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab6/src/main/java/web/controller/MyRestApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab6/src/main/java/web/service/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/src/main/java/controller/MyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/src/main/resources/static/js/students-crud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/src/main/resources/templates/rest-client.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/src/main/resources/templates/rest-client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/src/main/resources/templates/students-crud.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="35W3aFL1SNo4cGvMFLvnLf3KTYX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/HK_5/J6-TaiLieu-SOF3062/Java6/demo/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="demo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.28293.39" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.28293.39" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e4ff170-1b24-450d-bfa3-7cb35129fc2b" name="Changes" comment="" />
+      <created>1763212065044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763212065044</updated>
+      <workItem from="1763212066349" duration="3151000" />
+      <workItem from="1763260827457" duration="52000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

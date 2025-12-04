@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bài 2 Lab4</title>
 </head>
+<script
+        src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <body>
-$END$
+  <h1>RESTFUL WEB API</h1>
+  <hr>
+  <button onclick="doGetAll()">Get All</button>
+  <button onclick="doGetByKey()">Get By Key</button>
+  <button onclick="doPost()">Post</button>
+  <button onclick="doPut()">Put</button>
+  <button onclick="doDelete()">Delete</button>
+  <div id="datajson"></div>
+    <script>
+      var host = "https://java6-lab4-a7c69-default-rtdb.firebaseio.com/";
+
+   function doGetAll() {
+      var url = `${host}/students.json`;
+      axios.get(url).then(resp => {
+                console.log("GetAll (OK)", resp.data);
+              })
+              .catch(error => {
+                console.log("Error", error)
+              })
+    }
+
+    function doGetByKey(){
+     var key = "-OdTdEh4J8CeKngYgS5l";
+     var url = `${host}/students/${key}.json`;
+     axios.get(url).then(resp => {
+               console.log("GetByKey (OK)", resp.data);
+             })
+             .catch(error => {
+               console.log("Error", error);
+             })
+    };
+
+    function doPost(){
+     var url = `${host}/students.json`;
+     var data = {
+       "id": "SV05",
+       "name": "Hoàng Trung",
+       "mark": 9.0,
+       "gender": true
+     };
+     axios.post(url, data).then(resp => {
+       console.log("Post (OK)", resp.data);
+     })
+             .catch(error =>{
+               console.log ("ERROR POST", error);
+             })
+    };
+
+    function doPut(){
+      var key = "OdU2VLdPWMyQIgiG0gt";
+      var url = `${host}/students/${key}.json`;
+      var data = {
+        "id":"SV100",
+        "name": "HHHHHHHHHHHHH",
+        "mark": 8.0,
+        "gender": false
+      };
+      axios.put(url, data).then(resp => {
+        console.log("Put OK", resp.data);
+      })
+              .catch(error => {
+                console.log("ERROR PUT", error);
+              })
+    };
+
+    function doDelete(){
+      var key = "OdU2VLdPWMyQIgiG0gt";
+      var url = `${host}/students/${key}.json`;
+      axios.delete(url).then(resp => {
+        console.log("Success", resp.data);
+      }).catch(error => {
+        console.log("Error", error);
+      })
+    }
+
+    </script>
 </body>
 </html>

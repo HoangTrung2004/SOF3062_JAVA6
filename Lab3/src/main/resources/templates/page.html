@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab3 </title>
+</head>
+<body>
+<h2 th:text="${message}"></h2>
+<a href="/">Home</a>
+<p><a href="/poly/url0">URL0</a> Không cần đăng nhập</p>
+
+<p><a href="/poly/url1">URL1</a> – cần đăng nhập</p>
+<p><a href="/poly/url2">URL2</a> – cần ROLE_USER</p>
+<p><a href="/poly/url3">URL3</a> – cần ROLE_ADMIN</p>
+<p><a href="/poly/url4">URL4</a> – cần USER hoặc ADMIN</p>
+
+<hr>
+<div th:replace="~{user-info :: fragment}"></div>
+
+
+</body>
+</html>

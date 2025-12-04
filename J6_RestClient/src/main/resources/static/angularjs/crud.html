@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body ng-app="my-app">
+    <hr>
+    <h3>RESTful Web API - AngularJS</h3>
+    <div ng-controller="my-ctrl">
+        <div>
+            <div>
+                Id: <input ng-model="item.id"><br>
+            </div>
+            <div>
+                Name: <input ng-model="item.name"><br>
+            </div>
+        </div>
+
+        <hr>
+        <button ng-click="ctrl.create()">Create</button>
+        <button ng-click="ctrl.update()">Update</button>
+        <button ng-click="ctrl.delete()">Delete</button>
+        <button ng-click="ctrl.reset()">Reset</button>
+
+        <hr>
+        <table border="1" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="e in items">
+                    <td>{{e.id}}</td>
+                    <td>{{e.name}}</td>
+                    <td>
+                        <a href="" ng-click="ctrl.edit(e.id)">Edit</a>
+                        <a href="" ng-click="ctrl.delete(e.id)">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="crud.js"></script>
+</body>
+
+</html>
